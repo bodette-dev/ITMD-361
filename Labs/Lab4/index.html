@@ -2,23 +2,29 @@
 <html lang = "en">
 	<head>
 		<meta charset="utf-8">
+		
+		<!--Page Title-->
 		<title>ITMD 361 - Lab 04</title>
 	</head>
 	<body>
 		<form method="post" autocomplete="on" action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php">
+			<!--First box of Form-->
 			<h1>Volunteer Form</h1>
 			<fieldset>
 				<h4>My Info</h4>
 				
+				<!--Standard single-line text fields for personal information-->
 				<label>First Name: <input type ="text" name="first_name_field"></label><br>
 				<label>Last Name: <input type="text" name="last_name_field"></label><br>
 				<label>Phone Number: <input type="text" name="phone_field"></label><br>
 				<label>Email Address: <input type="text" name="email_field"></label><br>
 				
+				<!--Radio buttons for gender selection-->
 				<label>Gender: </label>
 				<label>Male <input type="radio" name="gender_field" value="Male"></label>
 				<label>Female <input type="radio" name="gender_field" value="Female"></label><br>
 				
+				<!--Drop down menu for age selection-->
 				<label>Age: </label>
 				<select name="age_field">
 					<option value="under 18">under 18</option>
@@ -30,9 +36,12 @@
 					<option value="65 and over">65 and over</option>
 				</select>
 			</fieldset>
-		
+			
+			<!--Second box of form-->
 			<h4>My Availability</h4>
 			<fieldset>
+				
+				<!--Check boxes for day selection-->
 				<label>Days Available: </label><br>
 				<label><input type="checkbox" name="available_field[]" value="Sunday">Sunday</label><br>
 				<label><input type="checkbox" name="available_field[]" value="Monday">Monday</label><br>
@@ -42,12 +51,15 @@
 				<label><input type="checkbox" name="available_field[]" value="Friday">Friday</label><br>
 				<label><input type="checkbox" name="available_field[]" value="Saturday">Saturday</label><br>
 				
+				<!--Multi-line text area for comments-->
 				<label>Any Comments?</label><br>
 				<textarea name="comments_field" cols="50" rows="10"></textarea>
 				
+				<!--Hidden Field-->
 				<input type="hidden" name="hidden_field" value="bodette">
 			</fieldset>
-		
+			
+			<!--Form submission button-->
 			<input type="submit" value="Send Me">
 		</form>
 	</body>
